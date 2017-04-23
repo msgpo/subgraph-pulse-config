@@ -1,0 +1,16 @@
+Source: subgraph-pulse-config
+Section: config
+Priority: standard
+Maintainer: David McKinney <mckinney@subgraph.com>
+Build-Depends: debhelper (>=9), config-package-dev
+Standards-Version: 3.9.8
+Homepage: https://subgraph.com/sgos/index.en.html
+
+Package: subgraph-pulse-config
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: Pulse config for Subgraph OS.
+ Config for Pulseaudio for Subgraph OS.
+
